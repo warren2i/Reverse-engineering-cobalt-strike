@@ -23,4 +23,4 @@ If ([IntPtr]::size -eq 8) {
   
   Funny thing is.... The operator bxor is actually the only component flagged by windows defender... LOL....
   
-  
+  ![alt text](https://raw.githubusercontent.com/warren2i/Reverse-engineering-cobalt-strike/main/threatcheck.png)
