@@ -1,0 +1,7 @@
+
+ThreatCheck
+
+https://github.com/rasta-mouse/ThreatCheck
+
+Takes a binary as input (either from a file on disk or a URL), splits it until it pinpoints that exact bytes that the target engine will flag on and prints them to the screen. This can be helpful when trying to identify the specific bad pieces of code in your tool/payload.
+
