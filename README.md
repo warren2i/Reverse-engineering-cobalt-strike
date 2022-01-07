@@ -23,4 +23,4 @@ This converted hex shell is then itterated over in a for loop using -bitwise xor
   
   Funny thing is.... The operator bxor is actually the only component flagged by windows defender... LOL....
   
-  ![alt text](https://raw.githubusercontent.com/warren2i/Reverse-engineering-cobalt-strike/main/threatcheck.png)
+  ![alt text](https://github.com/warren2i/Reverse-engineering-cobalt-strike/blob/main/threatcheck.png)
